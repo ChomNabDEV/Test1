@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        text-align: center;
+        font-family: Kantumruy pro;
+      }
+      .flexCtrl {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .ctrl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 450px;
+        height: 100%;
+        background-color: rgb(255, 145, 0);
+        padding: 10px;
+        border: 0.1px solid rgb(255, 255, 255);
+        border-radius: 12px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      .container1 {
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: 0.1px dotted gray;
+        font-weight: bold;
+        font-size: 18px;
+        gap: 10px;
+        transition: 0.7s ease;
+        cursor: pointer;
+      }
+      .btnCtrl {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      hr {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+      }
+      @media screen and (max-width: 480px) {
+        body {
+          padding: 10px;
+          text-align: start;
+        }
+        .Profile {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          font-size: min(20px, 10px);
+          gap: 10px;
+        }
+        img {
+          width: 100%;
+        }
+        .ctrlImg {
+          width: 50%;
+        }
+        .ProfileText {
+          font-size: 15px;
+        }
+        .ProfileText > h4 {
+          color: rgb(147, 127, 127);
+          font-size: 16px;
+        }
+        .ProfileText > h2 {
+          font-size: 20px;
+        }
+        p {
+          text-align: justify;
+          font-size: 14px;
+          margin-top: 15px;
+        }
+        hr {
+          opacity: 1;
+          visibility: visible;
+          display: block;
+        }
+        .container1 {
+          align-items: center;
+          flex-direction: column;
+        }
+        .ctrlContainer1 {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 15px;
+        }
+        .btnCtrl {
+          flex-direction: row;
+        }
+        .btnCtrl:hover button:not(:hover) {
+          opacity: 0.5;
+        }
+        .btnCtrl:hover button:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+        .btnHairMe {
+          background-color: rgb(40, 37, 37);
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexCtrl">
+      <div class="ctrl">
+        <div class="container">
+          <div class="Profile">
+            <div class="ctrlImg">
+              <img src="banner.jpg" alt="" />
+            </div>
+            <div class="ProfileText">
+              <h2>Natasha Romanoff</h2>
+              <h4>Brand Designer London</h4>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            impedit repudiandae, facere, libero dignissimos inventore nostrum
+            ipsum commodi quas laboriosam recusandae odit consequatur
+            architecto, ad explicabo dicta ex similique maxime.
+          </p>
+          <div class="ctrlContainer1">
+            <div class="container1">
+              <h4>Project</h4>
+              <h4>50</h4>
+            </div>
+            <hr />
+            <div class="container1">
+              <h4>Earning</h4>
+              <h4>$45K+</h4>
+            </div>
+            <hr />
+            <div class="container1">
+              <h4>Rating</h4>
+              <h4>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+            </div>
+          </div>
+
+          <div class="btnCtrl">
+            <button class="btnHairMe">Hair Me</button>
+            <button>Message</button>
+          </div>
+        </div>
+      </div>
+      <div class="ctrl">
+        <div class="container">
+          <div class="Profile">
+            <div class="ctrlImg">
+              <img src="banner.jpg" alt="" />
+            </div>
+            <div class="ProfileText">
+              <h2>Natasha Romanoff</h2>
+              <h4>Brand Designer London</h4>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            impedit repudiandae, facere, libero dignissimos inventore nostrum
+            ipsum commodi quas laboriosam recusandae odit consequatur
+            architecto, ad explicabo dicta ex similique maxime.
+          </p>
+          <div class="ctrlContainer1">
+            <div class="container1">
+              <h4>Project</h4>
+              <h4>50</h4>
+            </div>
+            <hr />
+            <div class="container1">
+              <h4>Earning</h4>
+              <h4>$45K+</h4>
+            </div>
+            <hr />
+            <div class="container1">
+              <h4>Rating</h4>
+              <h4>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+            </div>
+          </div>
+          <div class="btnCtrl">
+            <button class="btnHairMe">Hair Me</button>
+            <button>Message</button>
+          </div>
+        </div>
+      </div>
+      <div class="ctrl">
+        <div class="container">
+          <div class="Profile">
+            <div class="ctrlImg">
+              <img src="banner.jpg" alt="" />
+            </div>
+            <div class="ProfileText">
+              <h2>Natasha Romanoff</h2>
+              <h4>Brand Designer London</h4>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            impedit repudiandae, facere, libero dignissimos inventore nostrum
+            ipsum commodi quas laboriosam recusandae odit consequatur
+            architecto, ad explicabo dicta ex similique maxime.
+          </p>
+          <div class="ctrlContainer1">
+            <div class="container1">
+              <h4>Project</h4>
+              <h4>50</h4>
+            </div>
+            <hr />
+            <div class="container1">
+              <h4>Earning</h4>
+              <h4>$45K+</h4>
+            </div>
+            <hr />
+            <div class="container1">
+              <h4>Rating</h4>
+              <h4>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+            </div>
+          </div>
+
+          <div class="btnCtrl">
+            <button class="btnHairMe">Hair Me</button>
+            <button>Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
